@@ -116,7 +116,7 @@ nvm use v16
 - How does my computer find installed programs?
 - I\'ve installed the program but can\'t access it on the terminal?
 
-[Help is here](https://github.com/elva-labs/nodejs-speedrun/blob/main/installing/manual-installation.md)
+[Help is here](https://github.com/elva-labs/nodejs-speedrun/blob/master/installing/manual-installation.md)
 
 ---
 
@@ -165,7 +165,7 @@ let mutableVar = 1;
 mutableVar = 1337 + 2;
 ```
 
-[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/main/the-basics/variables/variables.md)
+[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/master/the-basics/variables/variables.md)
 
 ---
 
@@ -219,7 +219,7 @@ A side note about scope...
 }
 ```
 
-[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/main/the-basics/variables/variables.md#constlet-and-scopes)
+[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/master/the-basics/variables/variables.md#constlet-and-scopes)
 
 ---
 
@@ -237,7 +237,7 @@ JS defines seven built-in types:
 
 All of the above (except object) are called "primitives"
 
-[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/main/the-basics/data-types/data-types.md)
+[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/master/the-basics/data-types/data-types.md)
 
 ---
 
@@ -265,7 +265,7 @@ myVar = [1, 'two', () => 3];
 
 <br/>
 
-[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/main/the-basics/data-types/data-types.md#types)
+[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/master/the-basics/data-types/data-types.md#types)
 
 ---
 
@@ -289,7 +289,7 @@ arr[3][1]; // 5
 
 <br/>
 
-[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/main/the-basics/data-types/data-types.md#arrays)
+[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/master/the-basics/data-types/data-types.md#arrays)
 
 ---
 
@@ -315,7 +315,7 @@ Array.from(message) // ['H', 'e', 'l', 'l', 'o'];
 Array.from(message) === messageArr // false, since we actually compare a reference in this case.
 ```
 
-[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/main/the-basics/data-types/data-types.md#string)
+[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/master/the-basics/data-types/data-types.md#string)
 
 ---
 
@@ -360,7 +360,7 @@ c.toFixed(2); // 28.66
 c.toFixed(3); // 28.666
 ```
 
-[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/main/the-basics/data-types/data-types.md#numbers)
+[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/master/the-basics/data-types/data-types.md#numbers)
 
 ---
 
@@ -404,7 +404,7 @@ myFn() === 3; // true
 void myFn() === 3; // false
 ```
 
-[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/main/the-basics/data-types/data-types.md#null-undefined-and-void)
+[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/master/the-basics/data-types/data-types.md#null-undefined-and-void)
 
 ---
 
@@ -559,7 +559,7 @@ if (result === 1339) {
 }
 ```
 
-[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/main/the-basics/control-flows/control-flow.md)
+[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/master/the-basics/control-flows/control-flow.md)
 
 ---
 
@@ -679,7 +679,7 @@ const say = {
 export default say;
 ```
 
-[Read More](https://github.com/elva-labs/nodejs-speedrun/blob/main/the-basics/control-flows/modules.md)
+[Read More](https://github.com/elva-labs/nodejs-speedrun/blob/master/the-basics/control-flows/modules.md)
 
 ---
 
@@ -763,7 +763,7 @@ async function main() {
 }
 ```
 
-[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/main/the-basics/callbacks-promises/callbacks-promises.md#callbacks-and-promises)
+[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/master/the-basics/callbacks-promises/callbacks-promises.md#callbacks-and-promises)
 
 ---
 
@@ -835,7 +835,7 @@ fs.writeFile(targetFile, 'This string will be written to file\n', (err) => {
 });
 ```
 
-[Read More](https://github.com/elva-labs/nodejs-speedrun/blob/main/io/files.md)
+[Read More](https://github.com/elva-labs/nodejs-speedrun/blob/master/io/files.md)
 
 ---
 
@@ -850,7 +850,7 @@ fs.writeFile(targetFile, 'This string will be written to file\n', (err) => {
 
 <br/>
 
-[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/main/io/buffers-streams.md)
+[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/master/io/buffers-streams.md)
 
 ---
 
@@ -893,7 +893,7 @@ for await (const chunk of stream) {
 
 <br/>
 
-[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/main/io/http.md)
+[Read more](https://github.com/elva-labs/nodejs-speedrun/blob/master/io/http.md)
 
 ---
 
@@ -954,7 +954,7 @@ server.listen(PORT);
 
 # HTTP Server
 
-[Handling routes using only http lib](https://github.com/elva-labs/nodejs-speedrun/blob/main/examples/http/server-with-routes.js#L62)
+[Handling routes using only http lib](https://github.com/elva-labs/nodejs-speedrun/blob/master/examples/http/server-with-routes.js#L62)
 
 ---
 
