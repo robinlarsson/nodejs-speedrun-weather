@@ -23,13 +23,7 @@ test('2.1 Write a function (named concat) that can take any number of strings an
 
 test('2.2 Write a function (zip) that take two lists and sum each index-position with each other, it should throw RangeError if length of a != b, zip([1,1],[1,2]) -> [2,3] ', () => {
   // Write your code here...
-  const zip = (a, b) => {
-    if (a.length !== b.length) {
-      throw new RangeError('a & b must be of equal length');
-    }
-
-    return a.map((v, i) => v + b[i]);
-  };
+  // ...
   // -----------------------
 
   expect(zip([1, 2, 3], [1, 2, 3])).toEqual([2, 4, 6]);
@@ -39,11 +33,7 @@ test('2.2 Write a function (zip) that take two lists and sum each index-position
 
 test('2.3 create a function returns N:th fibonacci number (start at index 0)', () => {
   // Write your code here...
-  function fibonacci(n) {
-    if (n <= 1) return n;
-
-    return fibonacci(n - 1) + fibonacci(n - 2);
-  }
+  // ...
   // -----------------------
 
   expect(fibonacci(0)).toEqual(0);

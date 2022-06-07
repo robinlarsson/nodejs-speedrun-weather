@@ -1,10 +1,5 @@
-test('3.1 expressions', () => {
-  // Write your code here
+test('3.1 expressions (just review this one and make sure you understand each expression)', () => {
   const a = 3;
-  const b = 2;
-  const c = 5;
-  // --------------------
-
   const d = '3';
 
   expect(a > b).toBeTruthy();

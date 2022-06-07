@@ -5,15 +5,7 @@ test('2.1 Write a for-loop that separates given list of numbers to even and odd 
   let odd = [];
 
   // Write your code here
-  for (let i = 0; i < numbers.length; i++) {
-    const n = numbers[i];
-
-    if (n % 2 === 0) {
-      even.push(n);
-    } else {
-      odd.push(n);
-    }
-  }
+  // ...
   // --------------------
 
   expect(even.length).toBe(6);
@@ -25,11 +17,7 @@ test('2.2 Find even and odd, using for-loop & ternary', () => {
   let odd = [];
 
   // Write your code here
-  for (let i = 0; i < numbers.length; i++) {
-    const n = numbers[i];
-
-    n % 2 === 0 ? even.push(n) : odd.push(n);
-  }
+  // ...
   // --------------------
 
   expect(even.length).toBe(6);
@@ -41,15 +29,7 @@ test('2.3 Find even and odd, using while & if', () => {
   let odd = [];
 
   // Write your code here
-  for (let i = 0; i < numbers.length; i++) {
-    const n = numbers[i];
-
-    if (n % 2 === 0) {
-      even.push(n);
-    } else {
-      odd.push(n);
-    }
-  }
+  // ...
   // --------------------
 
   expect(even.length).toBe(6);
@@ -61,14 +41,7 @@ test('2.4 Find even and odd, using built in array function(s)', () => {
   let odd = [];
 
   // Write your code here
-  numbers.reduce(
-    (acc, n) => {
-      n % 2 == 0 ? acc.even.push(n) : acc.odd.push(n);
-
-      return acc;
-    },
-    { even, odd }
-  );
+  // ...
   // --------------------
 
   expect(even.length).toBe(6);

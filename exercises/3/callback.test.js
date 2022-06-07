@@ -6,22 +6,14 @@ test('3.2 Implement inputModule.run, so that it calls cb for each string in `inp
   const input = ['sokdf', 'vbn', 234, 'soid', 1232, 'a32.;2', '..123.98012'];
   const inputModule = {
     run(cb) {
-      // Write your code here...
-      input.forEach((v) => {
-        if (typeof v === 'string') {
-          cb(null, v);
-        } else {
-          cb(v);
-        }
-      });
+      // Write your code here
+      // ...
       // -----------------------
     },
   };
 
-  // Write your code here...
-  inputModule.run((err, v) => {
-    err ? null : (result += v.length);
-  });
+  // Write your code here
+  // ...
   // -----------------------
 
   expect(result).toBe(29);
@@ -30,19 +22,8 @@ test('3.2 Implement inputModule.run, so that it calls cb for each string in `inp
 test('3.3 Read each line from exercises/3/input.dat with `createReadStream`, sum all even numbers using a variable called "reader" which should be created using `readline.createInterface`, then make use of the method `on("line", cb)` ', (done) => {
   let result = 0;
 
-  // Write your code here...
-  const fileStream = fs.createReadStream('exercises/3/input.dat');
-  const reader = readline.createInterface(fileStream);
-
-  reader.on('line', (chunk) => {
-    const n = Number(chunk);
-
-    if (isNaN(n) || n % 2 != 0) {
-      return;
-    }
-
-    result += n;
-  });
+  // Write your code here
+  // ...
   // ----------------------
 
   reader.on('close', () => {
@@ -54,12 +35,8 @@ test('3.3 Read each line from exercises/3/input.dat with `createReadStream`, sum
 test('3.4 write a promise that resolves with any "string" after 500 ms, use promise.then(cb)', (done) => {
   let promise;
 
-  // Write your code here...
-  promise = new Promise((resolve, _reject) => {
-    setTimeout(() => {
-      resolve('Hello Promise');
-    }, 500);
-  });
+  // Write your code here
+  // ...
   // -----------------------
 
   promise.then((res) => {
@@ -71,12 +48,8 @@ test('3.4 write a promise that resolves with any "string" after 500 ms, use prom
 test('3.5 write a promise that resolves with any "string" after 500 ms, but this time use async/await', async () => {
   let promise;
 
-  // Write your code here...
-  promise = new Promise((resolve, _reject) => {
-    setTimeout(() => {
-      resolve('Hello Promise');
-    }, 500);
-  });
+  // Write your code here
+  // ...
   // -----------------------
 
   const res = await promise;
@@ -85,29 +58,11 @@ test('3.5 write a promise that resolves with any "string" after 500 ms, but this
 });
 
 test('3.6 refactor or copy parts of 3.3, but now create a function that takes one argument (filepath) and returns a promise with the correct result', async () => {
-  const lineCounter = (filePath) =>
+  const lineCounter = (filePath) => {
     // Write your code here...
-    new Promise((resolve, _reject) => {
-      let result = 0;
-
-      const fileStream = fs.createReadStream(filePath);
-      const reader = readline.createInterface(fileStream);
-
-      reader.on('line', (chunk) => {
-        const n = Number(chunk);
-
-        if (isNaN(n) || n % 2 != 0) {
-          return;
-        }
-
-        result += n;
-      });
-
-      reader.on('close', () => {
-        resolve(result);
-      });
-      // ----------------------
-    });
+    // ...
+    // ----------------------
+  };
 
   const result = await lineCounter('exercises/3/input.dat');
 
