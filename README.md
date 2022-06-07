@@ -10,7 +10,7 @@ If you find typos or want to make changes to any documents in this project, plea
 
 > This course use node v16.14.0 and es-module imports
 
-See [presentation](https://nodejs-speedrun.vercel.app/)
+See [presentation](https://nodejs-speedrun.vercel.app/1?clicks=1)
 
 ## Curriculum
 
