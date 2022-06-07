@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-speedrun",
+  "version": "1.0.0",
+  "description": "NodeJS speedrun course, This project aims to present different topics quick and easy.",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules --no-warnings node_modules/jest/bin/jest.js",
+    "test:0": "npm test -- exercises/0",
+    "test:1": "npm test -- exercises/1",
+    "test:2": "npm test -- exercises/2",
+    "test:3": "npm test -- exercises/3",
+    "build": "cd presentation && npm run build && cd -",
+    "presentation:install": "cd presentation && npm i && cd -"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elva-labs/nodejs-speedrun.git"
+  },
+  "author": "Joel S. Roxell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elva-labs/nodejs-speedrun/issues"
+  },
+  "homepage": "https://github.com/elva-labs/nodejs-speedrun#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.1",
+    "jest": "^28.1.0"
+  }
+}
