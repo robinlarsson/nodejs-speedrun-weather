@@ -23,6 +23,8 @@ drawings:
 
 # NodeJS Speedrun
 
+https://github.com/elva-labs/nodejs-speedrun
+
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
@@ -142,7 +144,7 @@ console.log('hello world');
 
 ---
 
-# Variables and Types
+# Variables & Types
 
 - Declaration
 - Assignment
@@ -415,6 +417,12 @@ void myFn() === 3; // false
 3. Number calculations
 4. Translate between number an string
 
+<br/>
+
+> src/exercises/1
+
+`npm run test:1`
+
 ---
 
 # Functions
@@ -513,7 +521,7 @@ b; // 3
 - equality
 - inequality
 - [coercion (explicit & implicit)](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/up%20%26%20going/ch2.md#coercion)
-- `==`, `===`,`<`, `>`, `<=`, and `>=`
+- `==`, `===`, `!=`, `!==`,`<`, `>`, `<=`, and `>=`
 
 ```js
 const a = '42';
@@ -652,6 +660,10 @@ do {
 2. Control flow
 3. Functions
 
+> src/exercises/2
+
+`npm run test:2`
+
 ---
 
 # Module Imports
@@ -687,7 +699,7 @@ export default say;
 
 ```js
 // main.js
-import say, { helper, anotherFn } from './say';
+import say, { helper, world } from './say';
 
 function main() {
   say.hello('m8'); // 'hello m8'
@@ -878,6 +890,10 @@ for await (const chunk of stream) {
 
 - read and write files
 - callback & promise
+
+> src/exercises/3
+
+`npm run test:3`
 
 ---
 
