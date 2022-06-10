@@ -4,6 +4,7 @@
   "description": "NodeJS speedrun course, This project aims to present different topics quick and easy.",
   "type": "module",
   "scripts": {
+    "start": "nodemon ./index.js",
     "test": "node --experimental-vm-modules --no-warnings node_modules/jest/bin/jest.js",
     "test:0": "npm test -- exercises/0",
     "test:1": "npm test -- exercises/1",
@@ -25,5 +26,13 @@
   "devDependencies": {
     "@types/jest": "^28.1.1",
     "jest": "^28.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.6",
+    "nodemon": "^2.0.16",
+    "pug": "^3.0.2"
   }
 }

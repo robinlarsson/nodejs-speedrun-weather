@@ -25,16 +25,32 @@ test('2.2 Write a function (zip) that take two lists and sum each index-position
   // Write your code here...
   // ...
   // -----------------------
+  const zip = (a, b) => {
+    return a.map((number, index) => {
+      if (!b[index]) throw new RangeError;
+      return (number + b[index])
+    });
+  };
 
   expect(zip([1, 2, 3], [1, 2, 3])).toEqual([2, 4, 6]);
   expect(zip([234, 123, 29384], [250, 124, 2788])).toEqual([484, 247, 32172]);
   expect(() => zip([1, 2, 3, 4], [1])).toThrow(RangeError);
 });
 
-test('2.3 create a function returns N:th fibonacci number (start at index 0)', () => {
+test.only('2.3 create a function returns N:th fibonacci number (start at index 0)', () => {
   // Write your code here...
   // ...
   // -----------------------
+
+  const fibonacci = (findIndex) => {
+    return [...new Array(findIndex).keys()].reduce((acc, index) => {
+      const prev = acc[index - 1];
+      // const current = acc[index];
+      return [...acc, prev + index];
+    },
+      [0]
+    );
+  };
 
   expect(fibonacci(0)).toEqual(0);
   expect(fibonacci(1)).toEqual(1);

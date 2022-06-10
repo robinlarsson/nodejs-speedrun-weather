@@ -1,5 +1,7 @@
 test('3.1 expressions (just review this one and make sure you understand each expression)', () => {
   const a = 3;
+  const b = 1;
+  const c = 4;
   const d = '3';
 
   expect(a > b).toBeTruthy();
